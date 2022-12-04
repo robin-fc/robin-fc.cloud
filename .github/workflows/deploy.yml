@@ -44,4 +44,4 @@ jobs:
           # Username for authentication.
           user: ${{ secrets.SERVER_SSH_USERNAME }}
           # String that contains a private key for either key-based or hostbased user authentication (OpenSSH format)
-          key: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
+          pass: ${{ secrets.SERVER_SSH_PASS }}
