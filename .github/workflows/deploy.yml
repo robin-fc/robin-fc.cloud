@@ -25,10 +25,10 @@ jobs:
         with:
           context: .
           push: true
-          tags: robinfc/blog:latest
+          tags: robinfc/cloud:latest
 
       - name: Stop and remove existing Nginx container (if any)
         run: docker stop nginx-container || true && docker rm nginx-container || true
 
       - name: Run Nginx container
-        run: docker run -d -p 80:80 --name nginx-container blog:latest
+        run: docker run -d -p 80:80 --name nginx-container cloud:latest
