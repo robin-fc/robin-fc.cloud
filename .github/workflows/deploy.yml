@@ -31,4 +31,4 @@ jobs:
         run: docker stop nginx-container || true && docker rm nginx-container || true
 
       - name: Run Nginx container
-        run: docker run -d -p 80:80 --name nginx-container cloud:latest
+        run: docker run -d -p 80:80 --name nginx-container robinfc/cloud:latest
