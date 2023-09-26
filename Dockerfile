@@ -2,9 +2,9 @@
 FROM node:alpine as builder
 WORKDIR '/app'
 COPY package.json .
-RUN pnpm install
+RUN npm install
 COPY . .
-RUN pnpm run build
+RUN npm run build
 
 #运行阶段-用nginx镜像运行
 FROM nginx
