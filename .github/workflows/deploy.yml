@@ -37,7 +37,7 @@ jobs:
             docker stop nginx-container || true
             docker rm nginx-container || true
             docker pull robinfc/cloud:latest
-            docker run -d -p 80:80 \
+            docker run -d -p 443:443 -p 80:80 \
               -v /etc/nginx/nginx.conf:/etc/nginx/nginx.conf \
               -v /etc/nginx/robin-fc.cloud_bundle.crt:/etc/nginx/robin-fc.cloud_bundle.crt \
               -v /etc/nginx/robin-fc.cloud.key:/etc/nginx/robin-fc.cloud.key \

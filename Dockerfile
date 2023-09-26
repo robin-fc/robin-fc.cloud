@@ -9,3 +9,6 @@ RUN npm run build
 #运行阶段-用nginx镜像运行
 FROM nginx
 COPY --from=builder /app/dist /usr/share/nginx/html
+
+# 运行在443端口
+EXPOSE 443
