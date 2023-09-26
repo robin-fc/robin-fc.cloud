@@ -1,10 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
+import React, { StrictMode, Suspense } from 'react'
+import { Loader } from '@react-three/drei'
 import './index.css'
+import { render } from 'react-dom'
+import Home from './pages/Home'
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+render(
+  <StrictMode>
+    <Suspense fallback={null}>
+      <Home />
+    </Suspense>
+    <Loader />
+  </StrictMode>,
+  document.getElementById('root') as HTMLElement,
 )
