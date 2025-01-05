@@ -1,6 +1,6 @@
-# Francisco Cabot's Portfolio
+# 樊聪的作品集
 
-## Main Technology Stack
+## 主要技术栈
 
 - [React](https://reactjs.org/)
 - [Threejs](https://threejs.org/)
@@ -8,15 +8,15 @@
 - [React Three Fiber](https://docs.pmndrs.dev/)
 - [GSAP](https://greensock.com/gsap/)
 
-## Get Started
+## 开始使用
 
-### Install
+### 安装
 
 ```
 pnpm install
 ```
 
-### Start
+### 启动
 
 ```
 pnpm dev
