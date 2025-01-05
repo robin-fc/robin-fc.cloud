@@ -33,6 +33,7 @@ jobs:
           host: ${{ secrets.ALI_CLOUD_HOST }}
           username: ${{ secrets.ALI_CLOUD_USERNAME }}
           key: ${{ secrets.ALI_CLOUD_SSH_KEY }}
+          passphrase: ${{ secrets.ALI_CLOUD_SSH_KEY_PASSWORD }}
           script: |
             docker stop nginx-container || true
             docker rm nginx-container || true
